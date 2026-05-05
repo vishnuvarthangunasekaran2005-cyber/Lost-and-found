@@ -1,0 +1,29 @@
+/* frontend/src/components/common/ImageUpload.module.css */
+.zone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zone:hover, .dragging {
+  border-color: var(--accent);
+  background: #fff8e7;
+}
+
+.placeholder { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.icon { font-size: 36px; }
+.placeholder p { font-size: 14px; font-weight: 500; }
+
+.preview {
+  max-height: 200px;
+  max-width: 100%;
+  border-radius: var(--radius);
+  object-fit: contain;
+}

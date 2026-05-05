@@ -1,0 +1,29 @@
+# Update application.yml to use embedded MongoDB for testing
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/lost_found_db
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+# Alternative: Use H2 in-memory database for testing
+# spring:
+#   datasource:
+#     url: jdbc:h2:mem:testdb
+#     driver-class-name: org.h2.Driver
+#   jpa:
+#     database-platform: org.hibernate.dialect.H2Dialect
+
+jwt:
+  secret: dGhpcyBpcyBhIHZlcnkgc2VjdXJlIHNlY3JldCBrZXkgZm9yIEpXVCB0b2tlbiBzaWduaW5nIHdpdGggSFM1MTI=
+  expiration: 900000
+  refreshExpiration: 604800000
+
+file:
+  upload-dir: ./uploads
+
+logging:
+  level:
+    com.lostandfound: DEBUG

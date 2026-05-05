@@ -1,0 +1,6 @@
+/* frontend/src/components/common/ConfirmModal.module.css */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 2000; }
+.modal { background: var(--card-bg); border-radius: var(--radius); padding: 24px; max-width: 400px; width: 90%; box-shadow: var(--shadow-hover); }
+.title { font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+.message { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+.actions { display: flex; gap: 12px; justify-content: flex-end; }

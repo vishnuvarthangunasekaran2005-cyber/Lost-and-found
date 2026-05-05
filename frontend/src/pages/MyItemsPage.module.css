@@ -1,0 +1,14 @@
+/* frontend/src/pages/MyItemsPage.module.css */
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-top: 8px; }
+.header h1 { font-size: 28px; font-weight: 800; }
+.actions { display: flex; gap: 8px; }
+
+.tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
+.tab { padding: 10px 20px; border: none; background: none; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+.tab:hover { color: var(--text); }
+.active { color: var(--accent-hover); border-bottom-color: var(--accent); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+
+.empty { text-align: center; padding: 48px; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); }
+.empty p { color: var(--muted); font-size: 16px; }

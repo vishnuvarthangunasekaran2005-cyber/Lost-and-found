@@ -1,0 +1,9 @@
+/* frontend/src/pages/AuthPage.module.css */
+.page { min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; width: 100%; max-width: 420px; box-shadow: var(--shadow); }
+.logo { font-size: 28px; font-weight: 800; text-align: center; margin-bottom: 8px; }
+.logo span { color: var(--accent); }
+.title { font-size: 22px; font-weight: 700; text-align: center; margin-bottom: 24px; }
+.switch { text-align: center; margin-top: 16px; font-size: 14px; }
+.switch a { color: var(--accent-hover); font-weight: 600; }
+.demo { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }

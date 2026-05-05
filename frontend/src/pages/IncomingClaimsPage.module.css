@@ -1,0 +1,26 @@
+/* frontend/src/pages/IncomingClaimsPage.module.css */
+.title { font-size: 28px; font-weight: 800; margin-bottom: 4px; padding-top: 8px; }
+.empty { text-align: center; padding: 48px; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); color: var(--muted); }
+
+.itemBlock { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 16px; overflow: hidden; box-shadow: var(--shadow); }
+
+.itemHeader { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; cursor: pointer; background: var(--secondary); color: #fff; }
+.itemHeader:hover { background: #37475A; }
+.itemTitle { font-size: 16px; font-weight: 700; margin-right: 12px; }
+.itemLoc { font-size: 13px; color: #ccc; }
+.itemMeta { display: flex; align-items: center; gap: 12px; }
+.claimCount { background: var(--accent); color: var(--text); padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 700; }
+
+.claimsList { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+
+.claimCard { border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; background: #fafafa; }
+.claimTop { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; gap: 8px; }
+.claimantName { font-size: 15px; font-weight: 700; margin-right: 10px; }
+.claimDate { font-size: 12px; color: var(--muted); }
+.claimDesc { font-size: 14px; color: var(--muted); margin-bottom: 12px; }
+
+.contactBox { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; background: #fff8e7; border: 1px solid var(--accent); border-radius: var(--radius); padding: 10px 14px; margin-bottom: 12px; }
+.contactLabel { font-size: 13px; font-weight: 600; color: var(--muted); }
+.contactVal { font-size: 15px; font-weight: 800; color: #E47911; }
+
+.actions { display: flex; gap: 8px; }

@@ -1,0 +1,16 @@
+/* frontend/src/components/items/ItemGrid.module.css */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.empty {
+  text-align: center;
+  padding: 48px;
+  color: var(--muted);
+  font-size: 16px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}

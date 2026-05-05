@@ -1,0 +1,6 @@
+/* frontend/src/components/common/Pagination.module.css */
+.pagination { display: flex; gap: 4px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
+.btn { padding: 6px 12px; border: 1px solid var(--border); background: var(--card-bg); border-radius: var(--radius); cursor: pointer; font-size: 13px; transition: all 0.15s; }
+.btn:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.active { background: var(--accent); border-color: var(--accent); font-weight: 700; }

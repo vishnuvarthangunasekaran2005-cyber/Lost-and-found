@@ -1,0 +1,8 @@
+/* frontend/src/pages/AdminDashboardPage.module.css */
+.title { font-size: 28px; font-weight: 800; margin-bottom: 20px; padding-top: 8px; }
+.tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
+.tab { padding: 10px 20px; border: none; background: none; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+.tab:hover { color: var(--text); }
+.active { color: var(--accent-hover); border-bottom-color: var(--accent); }
+.section { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+.sectionTitle { font-size: 18px; font-weight: 700; margin-bottom: 16px; }

@@ -1,0 +1,29 @@
+# backend/src/main/resources/application.yml
+server:
+  port: 8080
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 20
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/lost_found_db
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+jwt:
+  secret: dGhpcyBpcyBhIHZlcnkgc2VjdXJlIHNlY3JldCBrZXkgZm9yIEpXVCB0b2tlbiBzaWduaW5nIHdpdGggSFM1MTI=
+  expiration: 900000
+  refreshExpiration: 604800000
+
+file:
+  upload-dir: ./uploads
+
+logging:
+  level:
+    root: WARN
+    com.lostandfound: INFO

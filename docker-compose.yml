@@ -1,0 +1,56 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6
+    container_name: findit-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: lost_found_db
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - findit-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: findit-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/lost_found_db
+      JWT_SECRET: dGhpcyBpcyBhIHZlcnkgc2VjdXJlIHNlY3JldCBrZXkgZm9yIEpXVCB0b2tlbiBzaWduaW5nIHdpdGggSFM1MTI=
+    depends_on:
+      - mongodb
+    volumes:
+      - ./uploads:/app/uploads
+    networks:
+      - findit-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: findit-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_BASE_URL: http://localhost:8080/api
+    depends_on:
+      - backend
+    networks:
+      - findit-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  findit-network:
+    driver: bridge

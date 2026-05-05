@@ -1,0 +1,6 @@
+/* frontend/src/components/admin/PendingItemsTable.module.css */
+.wrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.table th { background: var(--secondary); color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; }
+.table td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+.table tr:hover td { background: var(--bg); }
