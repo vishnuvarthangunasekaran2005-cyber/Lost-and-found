@@ -1,0 +1,1 @@
+import{e as t}from"./index-BmrH6fSp.js";const m=a=>t.post("/claims",a,{headers:{"Content-Type":"multipart/form-data"}}),o=a=>t.get("/claims/my",{params:a}),c=a=>t.get(`/claims/for-item/${a}`),i=(a,s)=>t.put(`/claims/${a}/approve`,{note:s}),r=(a,s)=>t.put(`/claims/${a}/reject`,{note:s});export{c as a,i as b,m as c,o as g,r};

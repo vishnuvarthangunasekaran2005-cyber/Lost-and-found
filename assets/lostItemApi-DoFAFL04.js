@@ -1,0 +1,1 @@
+import{e}from"./index-BmrH6fSp.js";const o=t=>e.get("/lost-items",{params:t}),a=t=>e.get(`/lost-items/${t}`),m=t=>e.post("/lost-items",t,{headers:{"Content-Type":"multipart/form-data"}}),n=t=>e.delete(`/lost-items/${t}`);export{a,m as c,n as d,o as g};
